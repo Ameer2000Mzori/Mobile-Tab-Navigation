@@ -30,10 +30,17 @@ body {
   align-items: center;
   padding: 1px;
   border: solid whitesmoke 1px;
+  overflow: hidden;
 }
 
 .header .phone-Wrap .screen-Img {
   height: 90%;
+  opacity: 0;
+  transition: all 250ms;
+}
+
+.header .phone-Wrap .screen-Img.active {
+  opacity: 1;
 }
 
 .header .phone-Wrap .buttons-Wrap {
