@@ -5,10 +5,14 @@ const screenImg = document.getElementsByClassName("screen-Img")[0];
 // our gelobal varibales
 
 // functions
+const changeScreen = (indexNum): void => {
+  console.log(indexNum);
+};
 
 // event lisnters
 lisEl.forEach((el, indx) => {
   el.addEventListener("click", (e) => {
-    console.log(e, indx + 1);
+    let indexNum = indx + 1;
+    changeScreen(indexNum);
   });
 });
