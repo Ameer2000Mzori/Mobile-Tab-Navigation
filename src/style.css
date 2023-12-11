@@ -73,3 +73,11 @@ body {
   font-weight: 500;
   font-size: 13px;
 }
+
+.header .phone-Wrap .buttons-Wrap ul li.active a {
+  color: rgb(54, 228, 205);
+}
+
+.header .phone-Wrap .buttons-Wrap ul li.active i {
+  color: rgb(54, 228, 205);
+}

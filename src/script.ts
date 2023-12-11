@@ -12,9 +12,12 @@ let pageFour = false;
 const changeScreen = (indexNum): void => {
   console.log(indexNum);
   if (indexNum === 1) {
-    pageOne = true;
-
-    console.log("wow 1 ");
+    if (pageOne) {
+      console.log("page one is already true");
+    } else {
+      pageOne = true;
+      console.log("just made page one true");
+    }
   } else if (indexNum === 2) {
     console.log("wow 2 ");
   } else if (indexNum === 3) {
@@ -29,6 +32,7 @@ const changeScreen = (indexNum): void => {
 // event lisnters
 lisEl.forEach((el, indx) => {
   el.addEventListener("click", (e) => {
+    el.classList.add("active");
     let indexNum = indx + 1;
     changeScreen(indexNum);
   });

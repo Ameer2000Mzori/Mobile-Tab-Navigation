@@ -72,6 +72,16 @@ body {
             font-size: 13px;
           }
         }
+
+        li.active {
+          a {
+            color: rgb(54, 228, 205);
+          }
+
+          i {
+            color: rgb(54, 228, 205);
+          }
+        }
       }
     }
   }
