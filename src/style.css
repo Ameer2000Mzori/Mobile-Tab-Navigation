@@ -3,6 +3,7 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: rgb(56, 55, 55);
 }
 
 .header {
@@ -11,4 +12,64 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+.header .head {
+  height: 550px;
+  width: 300px;
+}
+
+.header .phone-Wrap {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 1px;
+  border: solid whitesmoke 1px;
+}
+
+.header .phone-Wrap .screen-Img {
+  height: 90%;
+}
+
+.header .phone-Wrap .buttons-Wrap {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  border-radius: 0 0 0.8rem 0.8rem;
+  background-color: whitesmoke;
+}
+
+.header .phone-Wrap .buttons-Wrap ul {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .phone-Wrap .buttons-Wrap ul li {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.header .phone-Wrap .buttons-Wrap ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
 }
