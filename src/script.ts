@@ -7,6 +7,17 @@ const screenImg = document.getElementsByClassName("screen-Img")[0];
 // functions
 const changeScreen = (indexNum): void => {
   console.log(indexNum);
+  if (indexNum === 1) {
+    console.log("wow 1 ");
+  } else if (indexNum === 2) {
+    console.log("wow 2 ");
+  } else if (indexNum === 3) {
+    console.log("wow 3 ");
+  } else if (indexNum === 4) {
+    console.log("wow 4 ");
+  } else {
+    console.log("wow else");
+  }
 };
 
 // event lisnters
