@@ -3,11 +3,17 @@ const lisEl = document.querySelectorAll("li");
 const screenImg = document.getElementsByClassName("screen-Img")[0];
 
 // our gelobal varibales
+let pageOne = true;
+let pageTwo = false;
+let pageThree = false;
+let pageFour = false;
 
 // functions
 const changeScreen = (indexNum): void => {
   console.log(indexNum);
   if (indexNum === 1) {
+    pageOne = true;
+
     console.log("wow 1 ");
   } else if (indexNum === 2) {
     console.log("wow 2 ");

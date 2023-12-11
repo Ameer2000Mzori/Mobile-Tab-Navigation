@@ -2,10 +2,15 @@
 var lisEl = document.querySelectorAll("li");
 var screenImg = document.getElementsByClassName("screen-Img")[0];
 // our gelobal varibales
+var pageOne = true;
+var pageTwo = false;
+var pageThree = false;
+var pageFour = false;
 // functions
 var changeScreen = function (indexNum) {
     console.log(indexNum);
     if (indexNum === 1) {
+        pageOne = true;
         console.log("wow 1 ");
     }
     else if (indexNum === 2) {
