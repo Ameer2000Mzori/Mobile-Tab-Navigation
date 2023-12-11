@@ -124,3 +124,15 @@ lisEl.forEach(function (el, indx) {
     });
 });
 // when windows loads
+window.addEventListener("load", function () {
+    // set page one true
+    pageOne = true;
+    // set time out for effects to run on page
+    setTimeout(function () {
+        screenImg.src =
+            "https://images.unsplash.com/photo-1682905926517-6be3768e29f0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+        console.log("just made page one true");
+        screenImg.classList.add("active");
+        lisEl[0].classList.add("active");
+    }, 200);
+});
